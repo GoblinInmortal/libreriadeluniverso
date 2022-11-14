@@ -11,7 +11,9 @@ const AppForm = (props) => {
         console.log(objeto);
     };
 
-    const handleSubmit = (e) => {          //controlar
+    const handleSubmit = (e) => {   
+        e.preventDefault();
+        
         console.log("Maneja envio");
     };
 
