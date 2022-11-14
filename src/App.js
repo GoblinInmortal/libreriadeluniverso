@@ -1,4 +1,6 @@
+import { collection, getDocs, query, doc, deleteDoc, where, } from "firebase/firestore";
 import { useState } from "react";
+import firebase, {db} from './componente/firebase';
 import AppForm from "./componente/AppForm";
 
 function App() {

@@ -1,4 +1,7 @@
+import {collection, doc, getDocs, addDoc, updateDoc } from "firebase/firestore";
+
 import React, { useState } from 'react';
+import firebase, {db} from './firebase';
 
 const AppForm = (props) => {
     //////////////////// Create  fnCreate //////////////////////
@@ -42,8 +45,12 @@ const AppForm = (props) => {
         <div style={{background:"yellow", padding:"10px", margin:"10px"}}>
             <h1>AppForm.js</h1>
             <form onSubmit ={handleSubmit}>   
-                <input type ="text" name = "nombre" placeholder = "Escriba Completo..."
+                <input type ="text" name = "nombre" placeholder = "Nombre"
                 onChange = {handleStatusChange} value = {objeto.nombre}/> <br/>
+                <input type ="text" name = "edad" placeholder = "Edad"
+                onChange = {handleStatusChange} value = {objeto.edad}/> <br/>
+                                <input type ="text" name = "genero" placeholder = "Genero"
+                onChange = {handleStatusChange} value = {objeto.genero}/> <br/>
                 <button>
                     {props.idActual === ""? "Guarda" : "Actualizar"}
                 </button>
