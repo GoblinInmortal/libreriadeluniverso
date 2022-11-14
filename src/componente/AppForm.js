@@ -13,12 +13,28 @@ const AppForm = (props) => {
 
     const handleSubmit = (e) => {   
         e.preventDefault();
-        
+        //////// Registrar //////////
+        if(props.idActual === ""){
+            //console.log(props.idActual);
+            if(validarForm()){
+                addDoc(collection(db, 'persona'), objeto); //CREAR
+                console.log('Se guardo...');
+                props.fnRead();
+            }else{
+                console.log('No se guardó...');
+            }
+        }else{
+        }
+        setObjeto(camposRegistro); // Limpiar objeto
         console.log("Maneja envio");
     };
 
     const validarForm  = (e) => {
-        console.log("Valida Formulario");
+        if(objeto.nombre ==="" || /^\s+$/.test(objeto.nombre)){
+            alert("Escriba nombres...");
+            return false;
+        }
+        return true;
     };
     
     //////////////////// Update  fnUpdate //////////////////////
