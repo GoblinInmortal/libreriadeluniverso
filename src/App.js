@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import AppForm from "./componente/AppForm";
 
 function App() {
+  
+  //////////////////// Read  fnRead //////////////////////////
+  const [idActual, setIdActual] = useState(""); 
+  const fnRead = (e) => {
+    console.log("Lectura base de datos"); 
+  };
+  //////////////////// Delete  fnDelete //////////////////////
+  const fnDelete = (e) => {
+     console.log("Se elimino con exito...");
+  };
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{background:"orange", padding:"10px", width:"350px"}}>
+      <h1>App.js</h1>
+      <AppForm {...{idActual, setIdActual, fnRead}}   />
     </div>
   );
 }
