@@ -15,7 +15,7 @@ const AppForm = (props) => {
         e.preventDefault();
         //////// Registrar //////////
         if(props.idActual === ""){
-            //console.log(props.idActual);
+            console.log(props.idActual);
             if(validarForm()){
                 addDoc(collection(db, 'persona'), objeto); //CREAR
                 console.log('Se guardo...');
@@ -27,7 +27,7 @@ const AppForm = (props) => {
         }
         setObjeto(camposRegistro); // Limpiar objeto
         console.log("Maneja envio");
-    };
+    }
 
     const validarForm  = (e) => {
         if(objeto.nombre ==="" || /^\s+$/.test(objeto.nombre)){
@@ -36,7 +36,7 @@ const AppForm = (props) => {
         }
         return true;
     };
-        
+
     //////////////////// Update  fnUpdate //////////////////////
     return (
         <div style={{background:"yellow", padding:"10px", margin:"10px"}}>
