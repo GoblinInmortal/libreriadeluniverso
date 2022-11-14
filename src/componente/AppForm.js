@@ -29,7 +29,7 @@ const AppForm = (props) => {
         console.log("Maneja envio");
     }
 
-    const validarForm  = (e) => {
+    const validarForm  = () => {
         if(objeto.nombre ==="" || /^\s+$/.test(objeto.nombre)){
             alert("Escriba nombres...");
             return false;
