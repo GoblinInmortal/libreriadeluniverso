@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/libreriadeluniverso/static/css/main.e6c13ad2.css",
+    "main.css": "/libreriadeluniverso/static/css/main.efc19518.css",
     "main.js": "/libreriadeluniverso/static/js/main.a1fb997f.js",
     "static/js/787.cc4e593a.chunk.js": "/libreriadeluniverso/static/js/787.cc4e593a.chunk.js",
     "index.html": "/libreriadeluniverso/index.html",
-    "main.e6c13ad2.css.map": "/libreriadeluniverso/static/css/main.e6c13ad2.css.map",
+    "main.efc19518.css.map": "/libreriadeluniverso/static/css/main.efc19518.css.map",
     "main.a1fb997f.js.map": "/libreriadeluniverso/static/js/main.a1fb997f.js.map",
     "787.cc4e593a.chunk.js.map": "/libreriadeluniverso/static/js/787.cc4e593a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c13ad2.css",
+    "static/css/main.efc19518.css",
     "static/js/main.a1fb997f.js"
   ]
 }
